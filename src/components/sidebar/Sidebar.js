@@ -1,11 +1,14 @@
 import React from 'react';
 import './sidebar.scss';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">jojiadmin</span>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <span className="logo">jojiadmin</span>
+        </Link>
       </div>
       <div className="center">
         <ul>
