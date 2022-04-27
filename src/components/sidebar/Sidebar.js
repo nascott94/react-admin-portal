@@ -3,6 +3,15 @@ import './sidebar.scss';
 import { Link } from 'react-router-dom';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import StoreIcon from '@mui/icons-material/Store';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+import InsertChartIcon from '@mui/icons-material/InsertChart';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
+import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
+import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const Sidebar = () => {
   return (
@@ -21,16 +30,56 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <Link to="/users" style={{ textDecoration: 'none' }}></Link>
+          <Link to="/users" style={{ textDecoration: 'none' }}>
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products" style={{ textDecoration: 'none' }}>
+            <li>
+              <StoreIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
-            <span>Dashboard</span>
+            <CreditCardIcon className="icon" />
+            <span>Delivery</span>
+          </li>
+          <p className="title">USEFUL</p>
+          <li>
+            <InsertChartIcon className="icon" />
+            <span>Stats</span>
           </li>
           <li>
-            <span>Dashboard</span>
+            <NotificationsNoneIcon className="icon" />
+            <span>Notifications</span>
+          </li>
+          <p className="title">SERVICE</p>
+          <li>
+            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+            <span>System Health</span>
+          </li>
+          <li>
+            <PsychologyOutlinedIcon className="icon" />
+            <span>Logs</span>
+          </li>
+          <li>
+            <SettingsApplicationsIcon className="icon" />
+            <span>Settings</span>
+          </li>
+          <p className="title">USER</p>
+          <li>
+            <AccountCircleOutlinedIcon className="icon" />
+            <span>Profile</span>
+          </li>
+          <li>
+            <ExitToAppIcon className="icon" />
+            <span>Logout</span>
           </li>
         </ul>
       </div>
-      <div className="bottom">color options</div>
+      <div className="bottom"></div>
     </div>
   );
 };
