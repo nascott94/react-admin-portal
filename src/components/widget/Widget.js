@@ -18,7 +18,7 @@ const Widget = ({ type }) => {
       data = {
         title: 'USERS',
         isMoney: false,
-        link: 'see all users',
+        link: 'See all users',
         icon: (
           <PersonOutlinedIcon
             className="icon"
@@ -34,7 +34,7 @@ const Widget = ({ type }) => {
       data = {
         title: 'ORDERS',
         isMoney: false,
-        link: 'view all orders',
+        link: 'View all orders',
         icon: (
           <ShoppingCartOutlinedIcon
             className="icon"
@@ -50,7 +50,7 @@ const Widget = ({ type }) => {
       data = {
         title: 'EARNINGS',
         isMoney: true,
-        link: 'view net earnings',
+        link: 'View net earnings',
         icon: (
           <MonetizationOnOutlinedIcon
             className="icon"
@@ -66,7 +66,7 @@ const Widget = ({ type }) => {
       data = {
         title: 'BALANCE',
         isMoney: true,
-        link: 'see details',
+        link: 'See details',
         icon: (
           <AccountBalanceWalletOutlinedIcon
             className="icon"
