@@ -1,12 +1,4 @@
 import React from 'react';
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  CartesianAxis,
-  Tooltip,
-  ResponsiveContainer,
-} from 'recharts';
 import './navbar.scss';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
